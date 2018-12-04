@@ -1,0 +1,36 @@
+<!-- complet! -->
+<ion-header>
+
+  <ion-navbar color="primary">
+      <ion-title>تسجيل دخول </ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  <ion-content class="ionCnt" >
+    <img class="headerImg" src="assets/imgs/loginForm/familyLogin.png">
+    <form class="loginForm" action="">
+      <br>
+     <b>البريد الالكتروني</b> 
+      <br>
+  <input class="emailInput" type="" name="firstname" value="" [(ngModel)]='info.email'>
+      <br>
+      <b>كلمة المرور</b>
+      <br>
+  <input class="passInput" type="password" name="lastname" value="" [(ngModel)]='info.password'>
+      <br>
+      <br>
+      <br>
+      <button class="loginBtn" (click)="login()">
+        تسجيل دخول
+      </button>
+  
+  <button class="loginBtn" (click)="cnclBtn()">
+    الغاء
+  </button>
+      <!-- <button class="loginBtn" (click)="logOut()">
+        خروج
+      </button> -->
+    </form>
+  </ion-content>
+  

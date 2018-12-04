@@ -1,0 +1,48 @@
+<!-- compelte! -->
+<ion-header>
+  <ion-navbar color="primary">
+  
+      <ion-title>صفحةالعائلة</ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content>
+  
+  
+    <img src="assets/imgs/kidinfo.png" class="kidinfo" />
+    <br>
+    <img src="assets/imgs/line.png" class="line" />
+  
+    <div dir="rtl" class="formKidInfo">
+      <div class="kidName">
+          <tr *ngFor="let item of itemArray" >
+        <h3>اسم الطالب:{{myKid.FirstName}}{{myKid.LastName}} </h3>
+      
+      </div>
+      <div class="kidStage">
+        <h3>المرحلة:        {{myKid.Stage}}</h3>
+
+      </div>
+      <div class="kidPhon">
+        <h3>رقم الهاتف:   {{myKid.Phone}}</h3>
+      
+      </div>
+      <div class="kidAddress">
+        <h3>العنوان:      {{myKid.Address}} </h3>
+  
+      </div>
+      <div class="kidEmail">
+        <h3>البريد الالكتروني:     {{myKid.Email}} </h3>
+   
+      </div>
+      <div class="Password">
+        <h3>كلمة المرور: {{myKid.Password}} </h3>
+   
+      </div>
+  
+    </div>
+  
+  <button class="divBtn" (click)="logOut()">تسجيل خروج</button>
+  
+  
+  </ion-content>
+  

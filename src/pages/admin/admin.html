@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-navbar color="primary" >
+      <ion-buttons left (click)="goBack()">
+        <button navPop ion-button icon-only >
+          <ion-icon color="light" name="arrow-forward"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-title>قسم الادارة</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+
+  
+  <img src="assets/imgs/adminPage/header.png" class="headerAdminImg" />
+  <img src="assets/imgs/adminPage/summry.png" class="summryAdminImg"/>
+  
+  <div class="btnGroup">
+  <button class="showBtn" (click)="show()"> عرض </button>
+  <button class="addBtn" (click)="add()"> اضافة </button>
+  <button class="delBtn" (click) ="send()"> ارسال اشعار </button>
+  </div>
+  
+  <div class="sinup">
+  <a (click)="SignUp()"> جديد | سجل دخولك</a>
+  </div>
+  <h2>{{titlefirebase}}
+  </h2>
+  <h2>{{bodyfirebase}}
+  
+  </h2>
+  
+  
+  </ion-content>
+  

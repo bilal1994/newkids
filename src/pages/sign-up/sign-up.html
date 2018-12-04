@@ -1,0 +1,37 @@
+<!-- complete! -->
+<ion-header >
+  <ion-navbar color="primary">
+    <ion-title>تسجيل جديد</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="mainPage">
+  <img class="headerImg" src="assets/imgs/sginup.png">
+  <!-- <ion-list>
+    <ion-item class="txtEmail">
+      <ion-label>Email</ion-label>
+      <ion-input class="txtEmail" type="text" [(ngModel)] = 'data.email'></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input class="txtPass" type="password" [(ngModel)]='data.password'></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Retype Password</ion-label>
+      <ion-input class="txtrePass" type="password"></ion-input>
+    </ion-item>
+  </ion-list> -->
+
+
+<div class="divForm">
+  <ion-label dir="rtl">عنوان البريد الالكتروني</ion-label>
+  <input class="txtEmail" type="" [(ngModel)] = 'data.email'>
+  <ion-label dir="rtl">كلمة المرور</ion-label>
+  <input class="txtPass" type="password" [(ngModel)]='data.password'>
+  
+</div>
+
+<button class="divBtn" (click) = "signUp()">Sign Up</button>
+
+
+</ion-content>

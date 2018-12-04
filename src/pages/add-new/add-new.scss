@@ -1,0 +1,45 @@
+page-add-new {
+
+    .headerImg{
+        background-size: cover;
+        padding: 5px;
+        margin: 10px;
+        
+    }
+  .divForm {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .txtEmail {
+    margin: 20px;
+    width: 100%;
+    // height: 35px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #215175;
+    color: #215175;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    
+
+  }
+  .txtPass {
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    border-radius: 50px;
+    border: 2px solid #215175;
+    text-align: center;
+  }
+  .divBtn {
+    width: 70%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 50px;
+    margin: 10px 12%;
+    color: beige;
+    background-color: #215175;
+  }
+}
