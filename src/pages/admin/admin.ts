@@ -27,9 +27,24 @@ export class AdminPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
 
-public alertCtrl: AlertController,private LocalNotifications :LocalNotifications ,private fcm:FCM ,public authi : AngularFireAuth ,public oneSignal: OneSignal,  public db : AngularFireDatabase) {
+public alertCtrl: AlertController ,private fcm:FCM ,public authi : AngularFireAuth ,public oneSignal: OneSignal,  public db : AngularFireDatabase) {
+  this.sendPush();
   }
-
+  sendPush(){
+    this.oneSignal.startInit('91e98635-86c9-4ace-9baf-b66c73ddc968', ' 954449921695');
+   
+   this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.InAppAlert);
+   
+   this.oneSignal.handleNotificationReceived().subscribe(() => {
+     console.log("يوجد طلب جديد لشخص محتاج دم تفقد ذلك");
+   });
+   
+   this.oneSignal.handleNotificationOpened().subscribe(() => {
+     this.navCtrl.push(AdminPage);
+   });
+   
+  this.oneSignal.endInit();
+  }
   firebaseMessage(){
     this. fcm.getToken().then(token => {
       //alert(token);
@@ -96,7 +111,7 @@ public alertCtrl: AlertController,private LocalNotifications :LocalNotifications
   }
 
   SignUp(){
-    this.navCtrl.push(SignUpPage)
+     this.navCtrl.push(SignUpPage)
   }
   send(){
     this.db.list("ids").valueChanges().subscribe( ids => {
@@ -105,7 +120,7 @@ public alertCtrl: AlertController,private LocalNotifications :LocalNotifications
         
              
               this.oneSignal.postNotification({
-                app_id:"3a315760-1e5d-4301-ac23-2d13ac4b6697",
+                app_id:"91e98635-86c9-4ace-9baf-b66c73ddc968",
                 include_player_ids:[id['id']],
                 contents: {
                   en: "message"
