@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "954449921695",
+    "firebase_url": "https://kidsionic.firebaseio.com",
+    "project_id": "kidsionic",
+    "storage_bucket": "kidsionic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954449921695:android:bd08d80b888e57ca",
+        "android_client_info": {
+          "package_name": "com.bilalfawwaz.mynotify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "954449921695-k30q8u5fm9pato0gc345ios5uuvplmrm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPEIbrR8KzRWk0uTN5LDbf8tPcIasQLAU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954449921695:android:56fcf04ce1bb6775",
+        "android_client_info": {
+          "package_name": "org.codeforiraq.mypharmacy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "954449921695-k30q8u5fm9pato0gc345ios5uuvplmrm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPEIbrR8KzRWk0uTN5LDbf8tPcIasQLAU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
