@@ -36,7 +36,7 @@ public alertCtrl: AlertController ,private fcm:FCM ,public authi : AngularFireAu
    this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.InAppAlert);
    
    this.oneSignal.handleNotificationReceived().subscribe(() => {
-     console.log("يوجد طلب جديد لشخص محتاج دم تفقد ذلك");
+     console.log("يوجد طلب جديد لشخص محتاج  تفقد ذلك");
    });
    
    this.oneSignal.handleNotificationOpened().subscribe(() => {
