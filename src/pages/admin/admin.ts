@@ -31,15 +31,18 @@ public alertCtrl: AlertController ,private fcm:FCM ,public authi : AngularFireAu
   this.sendPush();
   }
   sendPush(){
-    this.oneSignal.startInit('91e98635-86c9-4ace-9baf-b66c73ddc968', ' 954449921695');
+    this.oneSignal.startInit('9f27fd3f-27fa-48a7-8112-fb9f18bc0854', '954449921695');
    
    this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.InAppAlert);
    
    this.oneSignal.handleNotificationReceived().subscribe(() => {
+         // alert('hello kids ')
      console.log("يوجد طلب جديد لشخص محتاج  تفقد ذلك");
+     alert('hello kids ')
    });
    
    this.oneSignal.handleNotificationOpened().subscribe(() => {
+       // alert('hello kids finsh ')
      this.navCtrl.push(AdminPage);
    });
    
